@@ -1,0 +1,52 @@
+.title h1{
+    color: #fff;
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    position: relative;
+    width: fit-content;
+    margin: 20px 0 10px 0;
+}
+.title h1::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 35%;
+    left: 0;
+    bottom: 0;
+    background-color: #929dd2;
+    transition: height 350ms;
+    z-index: -1;
+}
+.title h1:hover::before{
+    height: 65%;
+}
+.filter{
+    width: 400px;
+    margin: auto;
+    margin-top: 1em;
+}
+.inputs{
+    width: 750px;
+    margin: auto;
+    gap: 20px;
+}
+@media (max-width: 767.98px){
+    .title h1{
+        font-size: 30px;
+        margin: 20px 0 20px 0;
+    }
+    .inputs{
+        width: 450px;
+    }
+}
+@media (max-width: 459.98px){
+    .title h1{
+        font-size: 22px;
+    }
+    .filter{
+        width: 300px;
+    }
+    .inputs{
+        width: 330px;
+    }
+}
